@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Åh så gott med kaffe!
+title: Åh så gott med kaffe! Smarrigt!
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
