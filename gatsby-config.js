@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Plugga med bilder',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Havsäventyret är ett bildsystem för alla elever som vill lära sig läsa och skriva på ett roligt och inspirerande sätt.Läromedlet är utvecklat utifrån de elever som har störst utmaningar men har visat sig lika engagerande för alla elever i klassen. Inkludering i praktiken!',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -69,9 +69,9 @@ module.exports = {
       resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
       options: {
         develop: true, // Activates purging in npm run develop
-        purgeOnly: ['/all.sass'], // applies purging only on the bulma css file
+        //purgeOnly: ['/all.sass'],
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
-}
+};
