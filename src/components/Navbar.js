@@ -1,55 +1,35 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import github from '../img/github-icon.svg';
 import logo from '../img/logo.svg';
 
 const Navbar = () => {
   return (
     <nav
-      className='navbar is-transparent'
+      className='bg-green-500 flex justify-center'
       role='navigation'
       aria-label='main-navigation'>
-      <div className='container'>
-        <div className='navbar-brand'>
-          <Link to='/' className='navbar-item' title='Logo'>
-            <img src={logo} alt='Kaldi' style={{ width: '88px' }} />
+      <div className='w-1280px'>
+        <Link to='/' className='navbar-item' title='Logo'>
+          <img src={logo} className='w-16 h-auto' alt='Plugga med bilder' />
+        </Link>
+        {/* Hamburger menu */}
+
+        <div id='navMenu' className='flex align-center'>
+          <Link className='h-12 px-4 py-4' to='/about'>
+            About
           </Link>
-          {/* Hamburger menu */}
-          <div className={`navbar-burger burger`} data-target='navMenu'>
-            <span />
-            <span />
-            <span />
-          </div>
-        </div>
-        <div id='navMenu' className={`navbar-menu`}>
-          <div className='navbar-start has-text-centered'>
-            <Link className='navbar-item' to='/about'>
-              About
-            </Link>
-            <Link className='navbar-item' to='/products'>
-              Products
-            </Link>
-            <Link className='navbar-item' to='/blog'>
-              Blog
-            </Link>
-            <Link className='navbar-item' to='/contact'>
-              Contact
-            </Link>
-            <Link className='navbar-item' to='/contact/examples'>
-              Form Examples
-            </Link>
-          </div>
-          <div className='navbar-end has-text-centered'>
-            <a
-              className='navbar-item'
-              href='https://github.com/netlify-templates/gatsby-starter-netlify-cms'
-              target='_blank'
-              rel='noopener noreferrer'>
-              <span className='icon'>
-                <img className='w-1/4 h-auto' src={github} alt='Github' />
-              </span>
-            </a>
-          </div>
+          <Link className='h-12 px-4 py-4' to='/products'>
+            Products
+          </Link>
+          <Link className='h-12 px-4 py-4' to='/blog'>
+            Blog
+          </Link>
+          <Link className='h-12 px-4 py-4' to='/contact'>
+            Contact
+          </Link>
+          <Link className='h-12 px-4 py-4' to='/contact/examples'>
+            Form Examples
+          </Link>
         </div>
       </div>
     </nav>

@@ -1,10 +1,10 @@
-# Gatsby + Netlify CMS Starter
+# Plugga med bilder
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b3efedca-9b5a-4c2b-848d-6cfe1028aba4/deploy-status)](https://app.netlify.com/sites/pmb-base/deploys)
 
-**Note:** This starter uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
+**Note:** This project uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
 
-This repo is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org) and based on **[Demo Link](https://gatsby-netlify-cms.netlify.com/)**.
+This repo is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org) and based on [gatsby-starter-netlify-cms](https://github.com/netlify-templates/gatsby-starter-netlify-cms).
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
 
@@ -21,7 +21,6 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 - Netlify deploy configuration
 - Netlify function support, see `lambda` folder
 - Perfect score on Lighthouse for SEO, Accessibility and Performance
-- [Tailwindcss](https://tailwindcss.com/) for styling.
 
 ## Prerequisites
 
@@ -54,7 +53,8 @@ $ netlify dev # or ntl dev
 - Access the CMS from the production site with /admin/ ([https://pmb-base.netlify.app/admin/](https://pmb-base.netlify.app/admin/))
 - In your code run `git pull`.
 - Run `npm start` and open [localhost](http://localhost:8000/) on port 8000.
-- As soon as you push soething from your code to master or edit/create contenst in the CMS it triggera a build to production.
+- As soon as you push code to **master** or edit/create contenst in the CMS it triggera a build to production.
+- **Always use Yarn when installing plugins and packages**
 
 ### Media Libraries (installed, but optional)
 

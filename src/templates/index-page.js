@@ -34,7 +34,9 @@ export const IndexPageTemplate = ({
           alignItems: 'left',
           flexDirection: 'column',
         }}>
-        <h1 className='bg-gray-100 sm:bg-blue-600 md:bg-gray-400'>{title}</h1>
+        <h1 className='bg-gray-100 sm:bg-blue-600 md:bg-gray-400'>
+          {title}HEJ HEJ HEJ!!!!
+        </h1>
         <button className='bg-red-400 hover:bg-blue-100'>KLick</button>
         <h3 className='bg-gray-100 sm:bg-blue-600 md:bg-gray-400'>
           {subheading}
